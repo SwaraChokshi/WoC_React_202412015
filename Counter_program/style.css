@@ -1,0 +1,25 @@
+#program_label{
+    display: block;
+    text-align: center;
+    font-size: 2em;
+    color: blueviolet
+}
+#counting_label{
+    display: block;
+    text-align: center;
+    font-size: 3em;
+    color:blueviolet;
+}
+button{
+    padding: 1%;
+    margin: 2%;
+    text-align: center;
+    background-color:mediumslateblue
+}
+button:hover{
+    background-color: fuchsia;
+}
+#btn_container{
+    text-align: center;
+    
+}
