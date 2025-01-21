@@ -1,14 +1,11 @@
-// Get calculator display
 const display = document.getElementById('calc-display');
 
-// Get all buttons
 const buttons = document.querySelectorAll('.btn');
 
 let currentInput = '';
 let previousInput = '';
 let operator = '';
 
-// Attach event listeners to buttons
 buttons.forEach(button => {
     button.addEventListener('click', () => {
         const value = button.getAttribute('data-value');
@@ -25,7 +22,6 @@ buttons.forEach(button => {
     });
 });
 
-// Functions to handle button actions
 function appendValue(value) {
     currentInput += value;
     updateDisplay(currentInput);
