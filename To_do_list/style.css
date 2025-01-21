@@ -1,0 +1,129 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #37979a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+#main_container {
+    width: 90%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#headingContainer {
+    padding: 30px 20px 40px;
+    border-radius: 15px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+h2 {
+    color: #002765;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+#row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+input {
+    flex: 1;
+    padding: 14px 20px;
+    font-size: 16px;
+    border: 2px solid #37979a;
+    border-radius: 8px;
+    outline: none;
+    background-color: #ffffff;
+    transition: border-color 0.3s;
+}
+
+input:focus {
+    border-color: #002765;
+}
+
+input::placeholder {
+    color: #9b9b9b;
+    font-style: italic;
+}
+
+#add_btn {
+    margin-left: 10px;
+    padding: 12px 30px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #002765;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#add_btn:hover {
+    background-color: #004699;
+}
+
+#list_container {
+    margin-top: 20px;
+    padding: 0;
+    list-style-type: none;
+}
+
+.task-item {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #eaf7f8;
+    border-radius: 8px;
+    border: 1px solid #37979a;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.task-item:hover {
+    background-color: #d4f0f1;
+    transform: scale(1.02);
+}
+
+.task-checkbox {
+    margin-right: 10px;
+    cursor: pointer;
+    width: 18px;
+    height: 18px;
+}
+
+.task-text {
+    font-size: 16px;
+    color: #002765;
+    word-wrap: break-word;
+    flex: 1;
+}
+
+.delete-btn {
+    padding: 6px 12px;
+    font-size: 14px;
+    color: #ffffff;
+    background-color: #d9534f;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.delete-btn:hover {
+    background-color: #c9302c;
+}
